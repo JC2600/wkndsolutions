@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekend Warriors</title>
+    <!-- CSS styling-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header"></div> <!-- Placeholder for the header -->
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <img src="images/banner-placeholder.jpg" alt="Banner Image">
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>Weekend Warriors: Tech Support That Never Sleeps</h1>
+            <p> Our dedicated tech support team works weekends to keep your systems running smoothly. 
+                From server crashes to network issues, we're here to resolve problems quickly and 
+                minimize downtime. When tech troubles strike, our experts are ready — because when 
+                technology never sleeps, neither do we.</p>
+            <div>
+                <button class="open-popup">Message Us</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/placeholder-image.jpg" alt="Placeholder Image">
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <div id="footer"></div> <!-- Placeholder for the footer -->
+
+    
+    <!-- Pop-up Form (Initially Hidden) -->
+    <div class="popup" id="popupForm">
+        <div class="popup-content">
+            <span class="close-btn" id="closePopup">&times;</span>
+            <h2>Share your thoughts</h2>
+            <form id="contactForm" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!--Calling JS Files-->
+    <script src="loadHeaderFooter.js"></script>       <!-- JS script to load header and footer -->
+    <script src="messageForm.js"></script>            <!-- JS script for "message us" button -->
+    
+
+</body>
+</html>
